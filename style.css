@@ -1,0 +1,1169 @@
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DG: hsl(0, 0%, 55%);
+    --VDG: hsl(0, 0%, 41%);
+    --toggle-btn: url(/images/icon-hamburger.svg);
+
+    font-family: 'Josefin Sans', sans-serif;    
+}
+
+/***********************NAVBAR STYLING***********************/
+.navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 30px;
+    margin: .5rem;
+    color: var(--White);
+    font-family: 'Alata', sans-serif;
+    font-weight: 900;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    border-bottom: 2px solid var(--White);
+    width: 60%;    
+}
+
+.navbar-links li:active {
+    color: #c83cb9;
+}
+
+.toggle-button {
+    background: var(--toggle-btn) no-repeat;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+    width: 30px;
+}
+
+.cross {
+    --toggle-btn: url(/images/icon-close.svg);
+}
+/* Hero Page */
+#hero {
+    background: url(/images/desktop/image-hero.jpg) no-repeat;
+    height: 100%;
+    min-height: 860px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 0vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 60px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-height: 860px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-text {
+    width: 800px;
+    color: var(--White);
+    border: 3px solid var(--White);
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 300; 
+    line-height: 1;
+    letter-spacing: 3px;
+    padding: 30px;
+    margin-left: 90px;
+    overflow: hidden;
+    z-index: 500;
+}
+
+#VR {
+    display: flex;
+    height: 120vh;
+    }
+
+#creations {
+    padding: 50px;
+}
+
+.creation {
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    padding: 15px;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid var(--Black);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.all:hover {
+    background-color: var(--Black);
+    color: var(--White);
+    font-weight: 400;
+}
+
+#creations {
+    display: flex;
+    flex-direction: column;
+}
+
+.creation-header {
+    text-align: center;
+}
+
+.created {
+    padding: 30px 0 10px 0;
+    text-transform: uppercase;
+    color: var(--White);
+}
+
+.each-created {
+    padding-bottom: 40px;
+}
+
+.created-text {
+    width: 35%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 100px;
+    letter-spacing: 2px;    
+    text-align: left;
+}
+
+.created-grid {
+    width: 20%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 100px;
+    letter-spacing: 2px;    
+    text-align: left;
+}
+
+.deep {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-deep-earth.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.arcade {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-night-arcade.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.soccer {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-soccer-team.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.the-grid {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-grid.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.above {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-from-above.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pocket {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-pocket-borealis.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.curiosity {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-curiosity.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.fisheye {
+    background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/mobile/image-fisheye.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.second-btn {
+    display: none;
+}
+
+#footer {
+    height: 100vh;
+    background-color: var(--Black);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.mini-nav {
+    text-align: center;
+}
+
+.mini-header {
+    padding: 30px 40px 40px 40px;
+    font-size: 30px;
+}
+
+.mini-list {
+    padding-bottom: 50px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 60px;  
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.facebook {
+    background: url(/images/icon-facebook.svg) no-repeat;
+    height: 30px;
+    width: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.twitter {
+    background: url(/images/icon-twitter.svg) no-repeat;
+    height: 30px;
+    width: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.pintrest {
+    background: url(/images/icon-pinterest.svg) no-repeat;
+    height: 30px;
+    width: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.instagram {
+    background: url(/images/icon-instagram.svg) no-repeat;
+    height: 30px;
+    width: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.right {
+    text-align: center;
+    font-size: 20px;
+    color: var(--VDG);
+}
+
+/*ATTRIBUTION*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 984px) {
+    .hero-text {
+        margin-left: 35px;
+    }
+
+    #VR {
+        padding: 120px 10px;
+        height: 100vh;
+    }
+
+    .vr-image {
+        background: url(/images/desktop/image-interactive.jpg) no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 600px;
+        position: absolute;
+        margin-left: 90px;
+    }
+    
+    .vr-content {
+        background-color: var(--White);
+        padding: 0 30px;
+        height: 400px;
+        width: 500px;
+        position: relative;
+        left: 500px;
+        top: 180px;    
+    }        
+
+    .vr-header {
+        margin-left: 30px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    .vr-text {
+        color: var(--DG);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0 0 0 30px; 
+    }
+
+    #creations {
+        padding: 10px;
+    }
+
+    .creation-header {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 95px 30px 100px;
+    } 
+
+    .all {
+        display: flex;
+    }
+
+    .created {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-gap: 10px;
+        place-items: center;
+        padding: 0 50px;
+    }
+
+    .created-text {
+        width: 8    0%;
+        height: 100%;
+        font-size: 25px;
+        font-weight: 400;
+        margin-left: 20px;
+        padding-top: 325px;
+        letter-spacing: 2px;    
+        text-align: left;
+    }
+    
+    .created-grid {
+        width: 20%;
+        height: 100%;
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 20px;
+        padding-top: 325px;
+        letter-spacing: 2px;    
+        text-align: left;
+    }
+    
+    .deep {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-deep-earth.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+
+    .deep:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-deep-earth.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .arcade {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-night-arcade.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+
+    .arcade:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-night-arcade.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .soccer {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-soccer-team.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+    
+    .soccer:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-soccer-team.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .the-grid {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-grid.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+    
+    .the-grid:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-grid.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .above {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-from-above.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+
+    .above:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-from-above.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .pocket {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-pocket-borealis.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+    
+    .pocket:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-pocket-borealis.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .curiosity {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-curiosity.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+    
+    .curiosity:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-curiosity.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+
+    .fisheye {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-fisheye.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 200px;
+    }
+
+    .fisheye:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-fisheye.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+
+    #footer {
+        height: 20vh;
+        width: 100%;
+    }
+
+    .bottom {
+        margin: 0 50px 0 75px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .mini-nav { 
+        display: flex;
+        flex-direction: column; 
+        width: 50%;
+        align-content: flex-start;
+        text-align: left;
+    }
+    
+    .mini-header {
+        padding: 0;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .mini-list {
+        padding-bottom: 0;
+    }
+    
+    li {
+        list-style: none;
+        font-size: 14px;
+        line-height: 10px;  
+        cursor: pointer; 
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    .contacts {
+        align-content: flex-start   ;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }    
+}
+
+@media (min-width: 1025px) {
+    .hero-text {
+        margin-left: 90px;
+    }
+
+    #VR {
+        padding: 120px 60px;
+        height: 100vh;
+    }
+
+    .vr-image {
+        background: url(/images/desktop/image-interactive.jpg) no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 600px;
+        position: absolute;
+        margin-left: 90px;
+    }
+    
+    .vr-content {
+        background-color: var(--White);
+        padding: 0 30px;
+        height: 400px;
+        width: 500px;
+        position: relative;
+        left: 600px;
+        top: 180px;    
+    }        
+
+    .vr-header {
+        margin-left: 30px;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    .vr-text {
+        color: var(--DG);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0 0 0 30px; 
+    }
+
+    .creation-header {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 95px 30px 100px;
+    } 
+
+    .all {
+        display: flex;
+    }
+
+    .created {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-gap: 10px;
+        place-items: center;
+        padding: 0 90px;
+    }
+
+    .created-text {
+        width: 70%;
+        height: 100%;
+        font-size: 28px;
+        font-weight: 400;
+        margin-left: 20px;
+        padding-top: 325px;
+        letter-spacing: 2px;    
+        text-align: left;
+    }
+    
+    .created-grid {
+        width: 20%;
+        height: 100%;
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 20px;
+        padding-top: 325px;
+        letter-spacing: 2px;    
+        text-align: left;
+    }
+    
+    .deep {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-deep-earth.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+
+    .deep:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-deep-earth.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .arcade {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-night-arcade.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+
+    .arcade:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-night-arcade.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .soccer {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-soccer-team.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+
+    .soccer:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-soccer-team.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+        
+    .the-grid {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-grid.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+    
+    .the-grid:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-grid.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .above {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-from-above.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+    
+    .above:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-from-above.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .pocket {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-pocket-borealis.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+    
+    .pocket:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-pocket-borealis.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    .curiosity {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-curiosity.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+
+    .curiosity:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-curiosity.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }
+    
+    
+    .fisheye {
+        background: linear-gradient(hsla(0, 0%, 0%, .314)100%, rgba(255, 255, 255, 0)), url(/images/desktop/image-fisheye.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        width: 240px;
+        cursor: pointer;
+    }
+
+    .fisheye:hover {
+        background: linear-gradient(hsla(0, 0%, 100%, .7)100%, rgba(0, 0, 0, 0)), url(/images/desktop/image-fisheye.jpg) no-repeat;
+        background-size: cover;
+        height: 430px;
+        color: black;
+    }    
+}
+
+
+@media (max-width: 983px) {
+    /********************MOBILE-NAVBAR***********************/
+    body {
+        --nav-bg: hsl(0, 0%, 0%, 0);
+    }
+
+    
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30px;
+        width: 30px;
+    } 
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        height: 100%;
+        min-height: 538px;
+        margin-top: 0vh;
+        background-color: var(--nav-bg)
+    }
+
+    .black {
+        --nav-bg: hsl(0, 0%, 0%);
+    }
+
+
+    .navbar {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 12vh;
+        background: var(--nav-bg);
+    }
+
+    .brand-title {
+        margin: 0;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-content: flex-start;
+        background-color: var(--Black);
+        height: 92vh;
+        justify-content: center;
+}
+
+    .navbar-links li {
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+    }
+
+    .navbar-links li:hover {
+        border: none;    
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    #hero {
+        background: url(/images/mobile/image-hero.jpg) no-repeat;
+        background-size: cover;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 550px;
+        color: var(--White);
+        border: 2px solid var(--White);
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 300;    
+        line-height: 40px;
+        line-height: 1;
+        letter-spacing: 3px;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .image-div {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 130px 0 40px 0;
+    }
+
+    #VR {
+        height: 135vh;
+        flex-direction: column;
+        padding-bottom: 200px;    
+    }
+
+    .vr-image {
+        background: url(/images/mobile/image-interactive.jpg) no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 85%;
+    }
+
+    .vr-header {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .vr-text {
+        color: var(--VDG);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 147px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    
+    .all {
+        display: none;
+    }
+
+    .second-btn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .all-two {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        padding: 15px;
+        letter-spacing: 2px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid var(--Black);
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .all-two:hover {
+        background-color: var(--Black);
+        color: var(--White);
+        font-weight: 400;
+    }
+
+    
+    #footer {
+        display: flex;
+        flex-direction: row;
+    }
+}    
+
+@media (max-width: 425px) {
+    #hero {
+        padding: 0 35px 0 35px;
+    }
+ 
+    .hero-text {
+        width: 100%;
+        color: var(--White);
+        border: 2px solid var(--White);
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 300;    
+        line-height: 1;
+        letter-spacing: 3px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #VR {
+        height: 105vh;
+        padding-bottom: 50px;
+    }
+
+    .vr-image {
+        height: 300px;
+    }
+
+    .vr-header {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .vr-text {
+        color: var(--VDG);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #creations {
+        padding: 20px;
+    }   
+
+    .creation {
+        font-size: 30px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .created-text {
+        width: 40%;
+        font-size: 25px;
+        margin-left: 20px;
+        padding-top: 80px;
+    }
+    
+    .created-grid {
+        width: 20%;
+        font-size: 25px;
+        font-weight: 400;
+        margin-left: 20px;
+        padding-top: 80px;
+    }
+    
+    .deep, .arcade, .soccer, .the-grid, .above, .pocket,.curiosity,.fisheye {
+        height: 150px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-text {
+        font-size: 2rem;
+        width: 100%;    
+        padding: 20px;
+        margin: 0;
+    }
+
+    #VR {
+        height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    .vr-image {
+        height: 250px;
+        width: 85%;
+    }
+
+    #creations {
+        padding: 20px;
+    }
+
+    .creation {
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-bottom: 40px;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+
+    .created-text {
+        width: 40%;
+        font-size: 20px;
+        padding-top: 60px;
+    }
+    
+    .created-grid {
+        width: 20%;
+        font-size: 20px;
+        padding-top: 60px;
+    }
+    
+    .deep, .arcade, .soccer, .the-grid, .above, .pocket,.curiosity,.fisheye {
+        height: 130px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 320px) {
+    #hero {
+        padding: 0 20px 0 20px;
+    }
+
+    .hero-text {
+        font-size: 1.8rem;
+        width: 100%;    
+        padding: 20px;
+        margin: 0;    
+    }
+
+    #VR {
+        height: 90vh;
+        padding-bottom: 50px;
+    }
+
+    .vr-image {
+        height: 200px;
+    }
+
+    .vr-header {
+        font-size: 30px;
+    }
+
+    .vr-text {
+        font-size: 15px;
+    }
+
+    .creation {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+    .created-text {
+        width: 50%;
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    
+    .created-grid {
+        width: 20%;
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    
+    .deep, .arcade, .soccer, .the-grid, .above, .pocket,.curiosity,.fisheye {
+        height: 100px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
