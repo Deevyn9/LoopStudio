@@ -33,16 +33,21 @@ body {
 
 .brand-title {
     font-size: 30px;
+    position: relative;
+    left: 6rem;
     margin: .5rem;
     color: var(--White);
     font-family: 'Alata', sans-serif;
     font-weight: 900;
+
 }
 
 .navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
+    position: relative;
+    right: 6rem;
 }
 
 .navbar-links li {
@@ -870,10 +875,12 @@ li {
 
     .brand-title {
         margin: 0;
+        left: 2rem;
     }
 
     .navbar-links ul {
         width: 100%;
+        right: 2rem;
         flex-direction: column;
         align-content: flex-start;
         background-color: var(--Black);
