@@ -875,12 +875,12 @@ li {
 
     .brand-title {
         margin: 0;
-        left: 2rem;
+        left: 3rem;
     }
 
     .navbar-links ul {
         width: 100%;
-        right: 2rem;
+        right: 4rem;
         flex-direction: column;
         align-content: flex-start;
         background-color: var(--Black);
