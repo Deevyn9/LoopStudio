@@ -880,7 +880,6 @@ li {
 
     .navbar-links ul {
         width: 100%;
-        right: 4rem;
         flex-direction: column;
         align-content: flex-start;
         background-color: var(--Black);
