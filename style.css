@@ -15,7 +15,6 @@ body {
     --toggle-btn: url(/images/icon-hamburger.svg);
 
     font-family: 'Josefin Sans', sans-serif;    
-    transition: background-color 1s ease-in-out;
 }
 
 /***********************NAVBAR STYLING***********************/
@@ -158,6 +157,7 @@ body {
     border: 2px solid var(--Black);
     font-weight: 700;
     cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 .all:hover {
