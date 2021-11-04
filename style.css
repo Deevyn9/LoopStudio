@@ -20,7 +20,7 @@ body {
 /***********************NAVBAR STYLING***********************/
 .navbar {
     width: 100%;
-    height: 7vh;
+    min-height: 7vh;
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
     position: absolute;
@@ -130,7 +130,7 @@ body {
 
 #VR {
     display: flex;
-    height: 130vh;
+    min-height: 120vh;
     }
 
 #creations {
