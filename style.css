@@ -157,7 +157,7 @@ body {
     border: 2px solid var(--Black);
     font-weight: 700;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 
 .all:hover {
@@ -464,6 +464,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
 
     .deep:hover {
@@ -478,6 +479,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
 
     .arcade:hover {
@@ -492,6 +494,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
     
     .soccer:hover {
@@ -506,6 +509,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
     
     .the-grid:hover {
@@ -520,6 +524,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
 
     .above:hover {
@@ -534,6 +539,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
     
     .pocket:hover {
@@ -548,6 +554,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
     
     .curiosity:hover {
@@ -563,6 +570,7 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
+        transition: background-color .7s ease-in-out;
     }
 
     .fisheye:hover {
