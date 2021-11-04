@@ -457,6 +457,7 @@ li {
         padding-top: 325px;
         letter-spacing: 2px;    
         text-align: left;
+        transition: all .7s ease-in-out;
     }
     
     .deep {
@@ -464,7 +465,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
 
     .deep:hover {
