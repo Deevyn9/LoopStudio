@@ -479,7 +479,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
 
     .arcade:hover {
@@ -494,7 +493,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
     
     .soccer:hover {
@@ -509,7 +507,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
     
     .the-grid:hover {
@@ -524,7 +521,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
 
     .above:hover {
@@ -539,7 +535,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
     
     .pocket:hover {
@@ -554,7 +549,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
     
     .curiosity:hover {
@@ -570,7 +564,6 @@ li {
         background-size: cover;
         height: 430px;
         width: 200px;
-        transition: all .7s ease-in-out;
     }
 
     .fisheye:hover {
