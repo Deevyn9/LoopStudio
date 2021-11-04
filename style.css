@@ -15,7 +15,7 @@ body {
     --toggle-btn: url(/images/icon-hamburger.svg);
 
     font-family: 'Josefin Sans', sans-serif;    
-    transition: background 0.4s ease-in-out;
+    transition: background-color 1s ease-in-out;
 }
 
 /***********************NAVBAR STYLING***********************/
