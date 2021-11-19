@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.7s ease-in-out;
 }
 
 .brand-title {
@@ -92,7 +93,7 @@ body {
 #hero {
     background: url(/images/desktop/image-hero.jpg) no-repeat;
     height: 100%;
-    min-height: 860px;
+    min-height: 900px;
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -106,8 +107,8 @@ body {
     position: absolute;
     top: 0%;
     left: 0%;
-    min-height: 860px;
-    height: 100%;
+    /* min-height: 900px; */
+    /* height: 100%; */
     width: 100%;
     opacity: 0.5;
     background-color: rgba(0, 0, 0, 0.3);
@@ -183,7 +184,7 @@ body {
 }
 
 .each-created {
-    padding-bottom: 40px;
+    padding-bottom: 40px;    
 }
 
 .created-text {
@@ -416,6 +417,7 @@ li {
 
     #creations {
         padding: 10px;
+        transition: all .7s ease-in-out;
     }
 
     .creation-header {
@@ -439,7 +441,7 @@ li {
     }
 
     .created-text {
-        width: 8    0%;
+        width: 80%;
         height: 100%;
         font-size: 25px;
         font-weight: 400;
@@ -447,6 +449,7 @@ li {
         padding-top: 325px;
         letter-spacing: 2px;    
         text-align: left;
+        transition: all 1s ease-in-out;    
     }
     
     .created-grid {
@@ -457,8 +460,8 @@ li {
         margin-left: 20px;
         padding-top: 325px;
         letter-spacing: 2px;    
-        text-align: left;
-        transition: all .7s ease-in-out;
+        text-align: left;   
+        transition: all 1s ease-in-out;
     }
     
     .deep {
@@ -846,7 +849,7 @@ li {
     .toggle-button {
         display: flex;
         position: absolute;
-        top: .75rem;
+        top: 1.4rem;
         right: 1rem;
         flex-direction: column;
         justify-content: space-between;
@@ -859,26 +862,27 @@ li {
         width: 100%;
         height: 100%;
         min-height: 538px;
-        margin-top: 0vh;
-        background-color: var(--nav-bg)
+        margin-top: 3vh;
+        background-color: var(--nav-bg);
+        transition: all 1s ease-in-out;
     }
 
     .black {
         --nav-bg: hsl(0, 0%, 0%);
     }
 
-
     .navbar {
         padding: 0;
         flex-direction: column;
         align-items: flex-start;
-        height: 12vh;
+        height: 10vh;
         background: var(--nav-bg);
     }
 
     .brand-title {
         margin: 0;
         left: 1rem;
+        top: .75rem;
     }
 
     .navbar-links ul {
@@ -940,9 +944,9 @@ li {
     }
 
     #VR {
-        height: 135vh;
+        min-height: 40vh;
         flex-direction: column;
-        padding-bottom: 200px;    
+        padding-bottom: 50px;    
     }
 
     .vr-image {
@@ -1006,7 +1010,7 @@ li {
     }
 }    
 
-@media (max-width: 425px) {
+@media (max-width: 590px) {
     #hero {
         padding: 0 35px 0 35px;
     }
@@ -1025,7 +1029,7 @@ li {
     }
 
     #VR {
-        height: 135vh;
+        min-height: 50vh;
         padding-bottom: 50px;
     }
 
@@ -1081,7 +1085,7 @@ li {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     .hero-text {
         font-size: 2rem;
         width: 100%;    
@@ -1090,7 +1094,7 @@ li {
     }
 
     #VR {
-        height: 135vh;
+        min-height: 50vh;
         padding-bottom: 50px;
     }
 
@@ -1143,7 +1147,7 @@ li {
     }
 
     #VR {
-        height: 135vh;
+        min-height: 50vh;
         padding-bottom: 50px;
     }
 
