@@ -875,7 +875,7 @@ li {
         padding: 0;
         flex-direction: column;
         align-items: flex-start;
-        height: 10vh;
+        min-height: 10vh;
         background: var(--nav-bg);
     }
 
