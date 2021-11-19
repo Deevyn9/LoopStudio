@@ -42,7 +42,6 @@ body {
     color: var(--White);
     font-family: 'Alata', sans-serif;
     font-weight: 900;
-
 }
 
 .navbar-links ul {
@@ -66,9 +65,9 @@ body {
     display: block;
 }
 
-.navbar-links li:hover {
+.navbar-links li a:hover {
     border-bottom: 2px solid var(--White);
-    width: 60%;    
+    width: 80%;    
 }
 
 .navbar-links li:active {
@@ -418,7 +417,6 @@ li {
 
     #creations {
         padding: 10px;
-        transition: all .7s ease-in-out;
     }
 
     .creation-header {
@@ -450,7 +448,7 @@ li {
         padding-top: 325px;
         letter-spacing: 2px;    
         text-align: left;
-        transition: all 1s ease-in-out;    
+        transition: all .5s ease-in-out;    
     }
     
     .created-grid {
@@ -462,7 +460,7 @@ li {
         padding-top: 325px;
         letter-spacing: 2px;    
         text-align: left;   
-        transition: all 1s ease-in-out;
+        transition: all .5s ease-in-out;
     }
     
     .deep {
