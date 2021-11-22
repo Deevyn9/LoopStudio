@@ -148,7 +148,6 @@ body {
     justify-content: center;
     align-content: center;
     text-transform: uppercase;
-    padding: 15px;
     letter-spacing: 2px;
     width: 200px;
     height: 50px;
@@ -158,7 +157,17 @@ body {
     transition: all .7s ease-in-out;
 }
 
-.all:hover {
+.all a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: var(--Black);
+}
+
+.all a:hover {
     background-color: var(--Black);
     color: var(--White);
     font-weight: 400;
@@ -987,7 +996,6 @@ li {
         justify-content: center;
         align-content: center;
         text-transform: uppercase;
-        padding: 15px;
         letter-spacing: 2px;
         width: 200px;
         height: 50px;
@@ -995,8 +1003,18 @@ li {
         font-weight: 700;
         cursor: pointer;
     }
+
+    .all-two a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        color: var(--Black);
+    }
     
-    .all-two:hover {
+    .all-two a:hover {
         background-color: var(--Black);
         color: var(--White);
         font-weight: 400;
