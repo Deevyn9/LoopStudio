@@ -9,7 +9,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll',  function() {
-    if (window.scrollY > 780) {
+    if (window.scrollY > 770) {
         navbar.style.position = 'fixed';
         navbar.style.backgroundColor = 'black'; 
     }else{
@@ -17,3 +17,9 @@ window.addEventListener('scroll',  function() {
         navbar.style.backgroundColor = "var(--nav-bg)";
     }
 });
+
+function hideUl() {
+    document.body.classList.toggle("cross");
+    navbarLinks.classList.toggle('active');
+    document.body.classList.toggle("black");
+}
